@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import AHelloWorld from './Components/AHelloWorld';
+import BHelloName from './Components/BHelloName';
+import CMessageOfTheDay from './Components/CMessageOfTheDay';
+import DBasicState from './Components/DBasicState';
+import ETwoMessages from './Components/ETwoMessages';
+import FWillsAwesomeCounter from './Components/FWillsAwesomeCounter';
+import GColorSwitcher from './Components/GColorSwitcher';
+import HTwoMessagesPartTwo from './Components/HTwoMessagesPartTwo';
+import IGithubFetcher from './Components/IGitHubFetcher';
+import JCatPic from './Components/JCatPic';
+import KTypicodeFetcher from './Components/KTypicodeFetcher';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AHelloWorld />
+      <BHelloName name = "Will"/>
+      <CMessageOfTheDay />
+      <DBasicState />
+      <ETwoMessages message1="Hello World" message2="Goodbye World"/>
+      <FWillsAwesomeCounter />
+      <GColorSwitcher />
+      <HTwoMessagesPartTwo />
+      <IGithubFetcher testName="thousandemon"/>
+      <JCatPic />
+      <KTypicodeFetcher />
+    </>
   );
 }
 

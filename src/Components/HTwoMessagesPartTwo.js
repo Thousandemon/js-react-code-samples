@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const HTwoMessagesPartTwo = () => {
+const HTwoMessagesPartTwo = (props) => {
     const [activeMessage, setActiveMessage] = useState(props.message1);
 
     function swapMessage() {
